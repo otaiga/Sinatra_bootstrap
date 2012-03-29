@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+  </head>
+  <body>
+  	<div class="well">
+	  <h1>Karl Turner</h1>
+	  <p>karl.turner5@gmail.com</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="span4 offset4">
+          <ul class="nav nav-pills">
+            <li><a href="#">item1</a></li>
+        	  <li><a href="#">item2</a></li>
+        	  <li><a href="#">item2</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+            <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
