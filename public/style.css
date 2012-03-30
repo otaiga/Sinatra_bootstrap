@@ -2531,6 +2531,9 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs,
 .nav-pills {
   *zoom: 1;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 18px;
 }
 .nav-tabs:before,
 .nav-pills:before,
