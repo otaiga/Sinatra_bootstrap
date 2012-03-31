@@ -3,22 +3,28 @@
     <div class="well">
      <h1 style="text-align:center">Contact Me</h1>
      <br>
-      <form class="form-horizontal">
+      <form class="form-horizontal" action="/contact" method="post">
         <fieldset>
+          <div class="control-group">
+            <label class="control-label" for="name">Your Name</label>
+            <div class="controls">
+              <input type="text" class="input" id="name" name="name">
+            </div>
+          </div>
           <div class="control-group">
             <label class="control-label" for="email">Your Email</label>
             <div class="controls">
-        	  <input type="email" class="input" id="email">
+        	  <input type="email" class="input" id="email" name="email">
         	</div>
           </div>
           <div class="control-group">
           	<label class="control-label" for="message">Your Message</label>
           	<div class="controls">
-          	  <textarea class="input" id="message" rows="3"> </textarea>
+          	  <textarea class="input" id="message" rows="3" name="message"> </textarea>
           	</div>
           </div>
           <br>
-          <button type="submit" class="btn">Submit</button>
+          <button style="float:right" type="submit" class="btn" value="Send">Submit</button>
         </fieldset>
       </form>
     </div>
