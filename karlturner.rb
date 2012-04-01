@@ -1,5 +1,6 @@
 require "rubygems"
 require "sinatra"
+require "sinatra/captcha"
 
   get '/' do
   	@notification = nil
@@ -11,6 +12,7 @@ require "sinatra"
   end
 
   post '/contact' do
+    halt(401, "Oops, seems we have an invalid entry <br><a href='/contact'>Try again?</a>") unless captcha_pass?
     require 'pony'
     name = ENV["NAME"]
     pass = ENV["PASS"]

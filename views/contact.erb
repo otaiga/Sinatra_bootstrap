@@ -23,7 +23,14 @@
           	  <textarea class="input" id="message" rows="3" name="message"> </textarea>
           	</div>
           </div>
-          <br>
+          <div class="control-group">
+            <div class="controls">
+              <%=captcha_image_tag%><br>
+              <p>Please enter text seen in image:<br>
+              <%=captcha_answer_tag%></p>
+              <br>
+            </div>
+        </div>
           <button style="float:right" type="submit" class="btn" value="Send">Submit</button>
         </fieldset>
       </form>
