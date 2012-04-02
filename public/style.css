@@ -4004,3 +4004,15 @@ h1 a{
 #mainlogo a:hover{
   color: grey;
 }
+
+
+.codeschool{
+  -webkit-border-radius : 8px;
+  -moz-border-radius : 8px;
+  border-radius : 8px;
+}
+
+.codeschool a:hover{
+  opacity: 0.5;
+}
+
